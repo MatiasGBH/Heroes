@@ -23,12 +23,18 @@ body {
     z-index: 400;
     margin: 0;
 }
-@media (max-width:480px){
+@media (min-width:481px) and (max-width:768px){
     .add{
         position: fixed;
-        bottom: 1vh;
+        top: 70vh;
         right: 1vw;
     }
+}
+@media (min-width:0px) and (max-width:480px){
+    .add{
+        top: 70vh;
+        right: 1vw;
+    }    
 }
 
 .bardiscound {
