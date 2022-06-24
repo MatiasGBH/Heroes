@@ -64,13 +64,88 @@ header {
     list-style: none;
     display: grid;
     grid-template-columns: 37% 37% 25%;
-    width: 300px;
+    width: 400px;
     text-align: center;
 }
 
-.enlaces__log{
-    width: 200px;
-    list-style: none;
+.enlace{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.enlaces .mobile{
+    display: none;
+}
+
+.enlace .mobile{
+    display: none;
+}
+
+/*formulario login*/
+.login{
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+    min-width: 310px;
+    width: fit-content;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #00669f, transparent);
+    height: 75vh;
+}
+.mensaje{
+    text-transform: uppercase;
+    color: var(--color-font);
+    border:outset;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+}
+
+.recuadro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    height: 50%;
+    margin-top: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.recuadro legend{
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(36, 36, 36);
+}
+
+.recuadro .in-width{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.in-width .datos{
+    width: 100%;
+    border-radius: 10px;
+    border: 0;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.in-width button{
+    width: 80px;
+    height: 40px;
+    border: 0;
+    border-radius: 10px;
 }
 
 /*cartas*/
@@ -120,7 +195,6 @@ header {
 .cuatro{
     background-image: url(../img/explosion.png);
 }
-
 
 .rostro img{
     width: 120px;
@@ -198,6 +272,32 @@ footer img{
     font-weight: 700;
 }
 
-@media (min-width:481px) and (max-width:768px) {}
+@media (min-width:481px) and (max-width:768px) {
+    footer{
+        flex-direction: column;
+    }
+}
 
-@media (min-width:0px) and (max-width:480px) {}
+@media (min-width:0px) and (max-width:480px) {
+    header .title{
+        font-size: 25px;
+    }
+    .nomobile{
+        display: none;
+    }
+    .enlaces{
+        grid-template-columns: 40% 40% 20%;
+    }
+    .enlaces .mobile{
+        display: flex;
+    }
+    .enlace .mobile{
+        display: flex;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .add{
+        top: 75%;
+    }
+}
