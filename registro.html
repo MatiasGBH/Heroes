@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon-superman.png">
+</head>
+
+<body>
+    <header>
+        <p class="desc">Descuentos 20%</p>
+        <div class="sticky">
+            <h1 class="title">card super heroes</h1>
+        </div>
+        <nav class="paginas">
+            <ul class="enlaces">
+                <li><a href=""><img src="img/mensaje.svg" alt="Mensaje" class="mobile"><span
+                            class="nomobile">Contacto</span></a></li>
+                <li><a href="registro.html"><img src="img/registro.svg" alt="Registrate" class="mobile"><span
+                            class="nomobile">Registrarme</span></a></li>
+                <li><a href="login.html"><img src="img/login.svg" alt="Login" class="mobile"><span
+                            class="nomobile">Iniciar</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form class="contenedorGrande">
+            <article class="bloques1">
+                <h2>Añadade tu super</h2>
+                <p>Añade tu personaje favorito comletando las opciones.</p>
+            </article>
+            <article class="bloques2">
+                <div class="nameSpecie">
+                    <div>
+                        <label for="">*Nombre</label><br>
+                        <input type="text" name="name"><br>
+                    </div>
+                    <div>
+                        <label for="">*Especie</label><br>
+                        <input type="text" name="especie" placeholder="Especie">
+                    </div>
+                </div>
+                <div class="formGrande">
+                    <div class="fechaDescripcion">
+                        <label for="">Fecha</label>
+                        <input type="date" name="fecha">
+                        <label for=""></label>
+                        <textarea name="descripcion" id="" placeholder="Descripcion"></textarea>
+                    </div>
+                    <div class="detalles">
+                        <div class="imagen">
+                            <label for="">Agregar fotos</label>
+                            <input type="file">
+                        </div>
+                        <div class="poderes">
+                            <label for="">Poderes</label>
+                            <span><input type="checkbox" name="check" checked>Volar</span>
+                            <span><input type="checkbox" name="check">Super inteligencia</span>
+                            <span><input type="checkbox" name="check">Vista de rayo láser</span>
+                            <span><input type="checkbox" name="check">Billetera gorda</span>
+                        </div>
+                        <hr>
+                        <div class="tipo">
+                            <label for="">Tipo de personaje</label>
+                            <div>
+                                <input type="radio" name="radio" checked><span>Heroe / Heroína</span>
+                                <input type="radio" name="radio"><span>Villano / Villana</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="bloques">
+                <label for=""></label>
+                <input type="submit" value="Añadir">
+            </article>
+        </form>
+    </main>
+    <footer>
+        <div class="derechos">Todos los derechos reservados a <span class="uppercase">front end 1</span></div>
+        <div><img src="img/github.png" alt="logo github"></div>
+    </footer>
+</body>
+
+</html>

@@ -68,23 +68,23 @@ header {
     text-align: center;
 }
 
-.enlace{
+.enlace {
     width: 100px;
     height: 50px;
     display: flex;
     align-items: center;
 }
 
-.enlaces .mobile{
+.enlaces .mobile {
     display: none;
 }
 
-.enlace .mobile{
+.enlace .mobile {
     display: none;
 }
 
 /*formulario login*/
-.login{
+.login {
     margin: auto;
     margin-top: 2rem;
     margin-bottom: 10rem;
@@ -99,17 +99,18 @@ header {
     background: linear-gradient(180deg, #00669f, transparent);
     height: 75vh;
 }
-.mensaje{
+
+.mensaje {
     text-transform: uppercase;
     color: var(--color-font);
-    border:outset;
+    border: outset;
     border-radius: 10px;
     box-sizing: border-box;
     padding: 10px;
     display: flex;
 }
 
-.recuadro{
+.recuadro {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,20 +121,20 @@ header {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.recuadro legend{
+.recuadro legend {
     font-weight: 700;
     font-size: 20px;
     color: rgb(36, 36, 36);
 }
 
-.recuadro .in-width{
+.recuadro .in-width {
     width: 80%;
     display: flex;
     justify-content: space-between;
     margin: 10px 0px;
 }
 
-.in-width .datos{
+.in-width .datos {
     width: 100%;
     border-radius: 10px;
     border: 0;
@@ -141,15 +142,114 @@ header {
     margin-top: 5px;
 }
 
-.in-width button{
+.in-width button {
     width: 80px;
     height: 40px;
     border: 0;
     border-radius: 10px;
 }
 
+/*formulario registro*/
+.contenedorGrande {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 3rem auto 20%;
+    background: linear-gradient(180deg, #00669f, black);
+    border-radius: 50px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    color: var(--color-font);
+    min-width: 350px;
+}
+.contenedorGrande article{
+    width: 100%;
+}
+
+article.bloques1{
+    text-align: center;
+}
+
+article.bloques2{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 1rem;
+}
+
+.bloques2 .nameSpecie{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.nameSpecie input{
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+    height: 25px;
+    margin-top: .5rem;
+}
+
+.formGrande{
+    display: flex;
+    margin: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-width: 310px;
+}
+
+.fechaDescripcion{
+    width: 30%;
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.fechaDescripcion input{
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+    height: 25px;
+}
+.fechaDescripcion textarea{
+    border-radius: 10px;
+    height: 50%;
+}
+
+.detalles{
+    width: 50%;
+    min-width: 290px;
+    display: flex;
+    flex-direction: column;
+}
+
+.detalles .imagen{
+    display: flex;
+    flex-direction: column;
+}
+
+.detalles .poderes{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.detalles hr{
+    width: 100%;
+}
+
+.bloques{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /*cartas*/
-.contenedor{
+.contenedor {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -157,7 +257,7 @@ header {
     padding: 2em;
 }
 
-.card{
+.card {
     min-width: 310px;
     max-width: 350px;
     height: 630px;
@@ -168,7 +268,7 @@ header {
     position: relative;
 }
 
-.icono{
+.icono {
     height: 200px;
     display: flex;
     justify-content: flex-start;
@@ -181,46 +281,51 @@ header {
     border-top-right-radius: 10px;
 }
 
-.uno{
+.uno {
     background-image: url(../img/baticueba.png);
 }
-.dos{
+
+.dos {
     background-image: url(../img/fondo\ marabilla.png);
 }
 
-.tres{
+.tres {
     background-image: url(../img/tierra.png);
 }
 
-.cuatro{
+.cuatro {
     background-image: url(../img/explosion.png);
 }
 
-.rostro img{
+.rostro img {
     width: 120px;
     border-radius: 50%;
 }
-.rostro{
+
+.rostro {
     display: flex;
     justify-content: center;
     margin-top: -60px;
 }
-.info{
+
+.info {
     margin-top: 20px;
     text-align: center;
 
 }
-.info span{
+
+.info span {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 25px;
 }
-.info p{
-    text-align:justify;
+
+.info p {
+    text-align: justify;
     padding: 0px 25px;
 }
 
-.mas{
+.mas {
     display: flex;
     justify-content: center;
     position: absolute;
@@ -228,7 +333,7 @@ header {
     left: 30%;
 }
 
-.mas button{
+.mas button {
     background-color: var(--color-principal);
     border-radius: 10px;
     border: 0;
@@ -239,7 +344,7 @@ header {
 }
 
 /*footer*/
-footer{
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -249,15 +354,18 @@ footer{
     padding: 20px;
     flex-wrap: wrap;
 }
-footer img{
+
+footer img {
     width: 150px;
     margin: 10px;
 }
-.derechos span{
+
+.derechos span {
     text-transform: uppercase;
 }
+
 /*button add*/
-.add{
+.add {
     z-index: 20;
     position: fixed;
     right: 3%;
@@ -273,31 +381,37 @@ footer img{
 }
 
 @media (min-width:481px) and (max-width:768px) {
-    footer{
+    footer {
         flex-direction: column;
     }
 }
 
 @media (min-width:0px) and (max-width:480px) {
-    header .title{
+    header .title {
         font-size: 25px;
     }
-    .nomobile{
+
+    .nomobile {
         display: none;
     }
-    .enlaces{
+
+    .enlaces {
         grid-template-columns: 40% 40% 20%;
     }
-    .enlaces .mobile{
+
+    .enlaces .mobile {
         display: flex;
     }
-    .enlace .mobile{
+
+    .enlace .mobile {
         display: flex;
     }
-    footer{
+
+    footer {
         flex-direction: column;
     }
-    .add{
+
+    .add {
         top: 75%;
     }
 }
